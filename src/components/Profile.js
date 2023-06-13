@@ -1,12 +1,14 @@
-import React from "react"
+import React, { lazy, Suspense } from "react"
 import Image from "../assets/output.png"
 import "./Profile.css"
-import Projects from "./Projects"
 import Bootstrap from "../assets/skills/Bootstrap.svg"
 import CSS from "../assets/skills/css.svg"
 import HTML from "../assets/skills/html.svg"
 import JavaScr from "../assets/skills/js.svg"
 import ReactLogo from "../assets/skills/react.svg"
+
+// Lazy load the Projects component
+const Projects = lazy(() => import("./Projects"))
 
 function Profile() {
   const a = {
@@ -92,7 +94,9 @@ function Profile() {
           </div>
         </div>
       </div>
-      <Projects />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Projects />
+      </Suspense>
     </div>
   )
 }

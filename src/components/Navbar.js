@@ -1,5 +1,6 @@
-import React from "react"
-import Profile from "./Profile"
+import React, { lazy, Suspense } from "react"
+
+const Profile = lazy(() => import("./Profile"))
 
 function Navbar() {
   return (
@@ -10,7 +11,9 @@ function Navbar() {
       >
         Chanti.<span style={{ color: "blue" }}>dev</span>
       </h4>
-      <Profile />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Profile />
+      </Suspense>
     </div>
   )
 }
