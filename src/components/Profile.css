@@ -1,0 +1,50 @@
+.img {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.52);
+    animation: myAnim 30s ease-in-out 2s infinite;
+}
+
+@keyframes myAnim {
+    0% {
+        border-radius: 25% 75% 70% 30% / 30% 18% 82% 70%;
+    }
+
+    10% {
+        border-radius: 25% 35% 70% 30% / 55% 18% 82% 45%;
+    }
+
+    20% {
+        border-radius: 25% 55% 70% 30% / 74% 18% 82% 26%;
+    }
+
+    30% {
+        border-radius: 25% 55% 70% 30% / 74% 52% 48% 26%;
+    }
+
+    40% {
+        border-radius: 25% 35% 32% 68% / 74% 52% 48% 26%;
+    }
+
+    50% {
+        border-radius: 25% 75% 70% 30% / 30% 18% 82% 70%;
+    }
+
+    60% {
+        border-radius: 25% 85% 70% 30% / 30% 18% 82% 70%;
+    }
+
+    70% {
+        border-radius: 67% 33% 32% 68% / 74% 52% 48% 26%;
+    }
+
+    80% {
+        border-radius: 25% 75% 70% 30% / 30% 18% 82% 70%;
+    }
+
+    90% {
+        border-radius: 67% 33% 32% 68% / 39% 28% 72% 61%;
+    }
+
+    100% {
+        border-radius: 25% 75% 70% 30% / 30% 18% 82% 70%;
+    }
+}

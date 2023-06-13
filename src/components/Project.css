@@ -1,0 +1,14 @@
+img {
+    border-radius: 20px;
+}
+
+.code-link {
+    font-size: 16px;
+    padding: 5px;
+}
+
+.code-link:hover {
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+}
