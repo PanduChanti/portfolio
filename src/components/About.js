@@ -30,6 +30,7 @@ function About() {
         </div>
         <div className="col-md-6 mt-3">
           <img
+            className="img-fluid"
             style={{ width: "400px" }}
             src="https://stefantopalovicdev.vercel.app/static/media/about-img.62b47e7f183d4b4e9feb.webp"
             alt="img"

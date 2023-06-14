@@ -97,6 +97,7 @@ function Projects() {
               </div>
               <div className="col-md-6 mt-3">
                 <img
+                  className="img-fluid"
                   style={{ width: "400px" }}
                   src={data[0].img}
                   alt="img.png"
@@ -114,6 +115,7 @@ function Projects() {
               {/* image */}
               <div className=" col-md-4 offset-md-2 mt-1 col-sm-offset-6">
                 <img
+                  className="img-fluid"
                   style={{ width: "400px" }}
                   src={data[1].img}
                   alt="img.png"
@@ -186,6 +188,7 @@ function Projects() {
               </div>
               <div className="col-md-6 mt-3">
                 <img
+                  className="img-fluid"
                   style={{ width: "400px" }}
                   src={data[2].img}
                   alt="img.png"
@@ -203,6 +206,7 @@ function Projects() {
               {/* image */}
               <div className="col-md-4 offset-md-2 mt-1 col-sm-offset-6 text-center">
                 <img
+                  className="img-fluid"
                   style={{ width: "400px" }}
                   src={data[3].img}
                   alt="img.png"
