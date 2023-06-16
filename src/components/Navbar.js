@@ -14,6 +14,7 @@ function Navbar() {
       style={{
         backgroundColor: isDarkMode ? "black" : "white",
         color: isDarkMode ? "white" : "black",
+        overflowX: "hidden",
       }}
       className={`p-1 ${isDarkMode ? "dark-mode" : ""}`}
     >

@@ -10,5 +10,5 @@ img {
 .code-link:hover {
     text-decoration: none;
     background-color: blue;
-    color: white;
+    color: white !important;
 }
