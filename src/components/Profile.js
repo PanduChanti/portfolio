@@ -8,7 +8,6 @@ import JavaScr from "../assets/skills/js.svg"
 import ReactLogo from "../assets/skills/react.svg"
 import Contact from "./Contact"
 
-// Lazy load the Projects component
 const Projects = lazy(() => import("./Projects"))
 
 function Profile({ isDarkMode }) {
@@ -32,11 +31,11 @@ function Profile({ isDarkMode }) {
       <div className="row">
         <div className="col-md-5">
           <div className="container-fluid offset-md-5 mt-5">
-            <div className="img" style={imageContainer}></div>{" "}
+            <div className="img" style={imageContainer}></div>
           </div>
         </div>
         <div className="col-md-5 mt-5">
-          <div className="container-fluid ">
+          <div className="container-fluid">
             <div className="container">
               <h5
                 style={{ fontWeight: "bolder", fontSize: "50px" }}
