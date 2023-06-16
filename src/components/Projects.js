@@ -49,7 +49,7 @@ const obj = [
   },
 ]
 
-function Projects() {
+function Projects({ isDarkMode }) {
   const [data, setData] = useState(obj)
 
   useEffect(() => {
@@ -79,6 +79,7 @@ function Projects() {
                     href={data[0].sourceCode}
                     target="_blank"
                     rel="noreferrer"
+                    style={{ color: isDarkMode ? "white" : "black" }}
                   >
                     Code{" "}
                     <i
@@ -88,6 +89,7 @@ function Projects() {
                   </a>
 
                   <a
+                    style={{ color: isDarkMode ? "white" : "black" }}
                     className="code-link ms-4 btn"
                     href={data[0].live}
                     target="_blank"
@@ -130,6 +132,7 @@ function Projects() {
 
                 <div className="d-flex card-body text-center">
                   <a
+                    style={{ color: isDarkMode ? "white" : "black" }}
                     className="code-link btn"
                     href={data[1].sourceCode}
                     target="_blank"
@@ -143,6 +146,7 @@ function Projects() {
                   </a>
 
                   <a
+                    style={{ color: isDarkMode ? "white" : "black" }}
                     className="code-link ms-4 btn"
                     href={data[1].live}
                     target="_blank"
@@ -166,6 +170,7 @@ function Projects() {
 
                 <div className="d-flex card-body text-center">
                   <a
+                    style={{ color: isDarkMode ? "white" : "black" }}
                     className="code-link btn"
                     href={data[2].sourceCode}
                     target="_blank"
@@ -179,6 +184,7 @@ function Projects() {
                   </a>
 
                   <a
+                    style={{ color: isDarkMode ? "white" : "black" }}
                     className="code-link ms-4 btn"
                     href={data[2].live}
                     target="_blank"
@@ -221,6 +227,7 @@ function Projects() {
 
                 <div className="d-flex card-body text-center">
                   <a
+                    style={{ color: isDarkMode ? "white" : "black" }}
                     className="code-link btn"
                     href={data[3].sourceCode}
                     target="_blank"
@@ -234,6 +241,7 @@ function Projects() {
                   </a>
 
                   <a
+                    style={{ color: isDarkMode ? "white" : "black" }}
                     className="code-link ms-4 btn"
                     href={data[3].live}
                     target="_blank"

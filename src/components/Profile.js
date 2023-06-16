@@ -11,7 +11,7 @@ import Contact from "./Contact"
 // Lazy load the Projects component
 const Projects = lazy(() => import("./Projects"))
 
-function Profile() {
+function Profile({ isDarkMode }) {
   const a = {
     fontSize: "40px",
     color: "black",
@@ -54,7 +54,10 @@ function Profile() {
                   href="https://www.linkedin.com/in/pandu-ranga-rao-akurati-81b554164/"
                   style={a}
                 >
-                  <i className="fab fa-linkedin"></i>
+                  <i
+                    style={{ color: isDarkMode ? "white" : "black" }}
+                    className="fab fa-linkedin"
+                  ></i>
                 </a>
                 <a
                   style={{
@@ -64,7 +67,10 @@ function Profile() {
                   }}
                   href="https://github.com/PanduChanti/"
                 >
-                  <i className="fab fa-github"></i>
+                  <i
+                    style={{ color: isDarkMode ? "white" : "black" }}
+                    className="fab fa-github"
+                  ></i>
                 </a>{" "}
                 | <span>Social Media</span>
               </div>
@@ -96,7 +102,7 @@ function Profile() {
         </div>
       </div>
       <Suspense fallback={<div>Loading...</div>}>
-        <Projects />
+        <Projects isDarkMode={isDarkMode} />
       </Suspense>
       <Contact />
     </div>
