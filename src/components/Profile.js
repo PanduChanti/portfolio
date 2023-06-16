@@ -6,6 +6,7 @@ import CSS from "../assets/skills/css.svg"
 import HTML from "../assets/skills/html.svg"
 import JavaScr from "../assets/skills/js.svg"
 import ReactLogo from "../assets/skills/react.svg"
+import Contact from "./Contact"
 
 // Lazy load the Projects component
 const Projects = lazy(() => import("./Projects"))
@@ -97,6 +98,7 @@ function Profile() {
       <Suspense fallback={<div>Loading...</div>}>
         <Projects />
       </Suspense>
+      <Contact />
     </div>
   )
 }

@@ -61,12 +61,14 @@ function Projects() {
     <div className=" mt-5">
       <div className="container-fluid mt-5">
         <div className="row">
+          <h6 className="ms-4" style={{ fontWeight: "bold", color: "blue" }}>
+            PORTFOLIO
+          </h6>
+          <h5 className="ms-4" style={{ fontWeight: "bold" }}>
+            Each project is a unique piece of development 🧩
+          </h5>
           <div className="col-md-12 mt-4">
             <div className="row p-4">
-              <h6 style={{ fontWeight: "bold", color: "blue" }}>PORTFOLIO</h6>
-              <h5 style={{ fontWeight: "bold" }}>
-                Each project is a unique piece of development 🧩
-              </h5>
               <div className="col-md-4 offset-md-2 mt-3 col-sm-offset-6 text-center">
                 <h2 className="card-title">{data[0].title}</h2>
                 <p>{data[0].description}</p>
