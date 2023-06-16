@@ -4,8 +4,7 @@
 
 body {
     background-color: whitesmoke;
-    overflow-x: hidden;
-    box-sizing: border-box;
+
 }
 
 .spinner-container {
