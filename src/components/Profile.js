@@ -54,7 +54,7 @@ function Profile({ isDarkMode }) {
                 >
                   <i
                     style={{ color: isDarkMode ? "white" : "black" }}
-                    className="fab fa-linkedin"
+                    className="fab fa-linkedin fa-shake"
                   ></i>
                 </a>
                 <a
@@ -70,7 +70,10 @@ function Profile({ isDarkMode }) {
                     className="fab fa-github"
                   ></i>
                 </a>{" "}
-                | <span>Social Media</span>
+                |{" "}
+                <span>
+                  <span style={{ color: "blue" }}>Social</span> Media
+                </span>
               </div>
               <div className="container-fluid mt-4">
                 <img src={HTML} style={{ width: "40px" }} alt="img.png" />
