@@ -1,0 +1,38 @@
+.chat-messages {
+    color: black;
+}
+
+.chat-messages {
+    padding: 10px;
+    max-height: 300px;
+    /* Increase to your desired value */
+    overflow-y: auto;
+}
+
+@media (min-width: 320px) {
+    img {
+        margin-left: -35px;
+    }
+}
+
+@media (min-width: 425px) {
+    img {
+        margin-left: -35px;
+    }
+}
+
+.user-input {
+    display: grid;
+}
+
+.user-input button {
+    margin: 3px;
+    border: none;
+    border-radius: 10px;
+
+}
+
+.user-input button:hover {
+    background: rgb(68, 68, 232);
+    color: white;
+}

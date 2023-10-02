@@ -3,6 +3,8 @@ import Navbar from "../src/components/Navbar"
 // import Profile from "../src/components/Profile"
 import "./App.css"
 import { RingLoader } from "react-spinners"
+import { Routes, Route } from "react-router-dom"
+import Login from "./Landingpages/Login"
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -21,7 +23,10 @@ function App() {
         </div>
       ) : (
         <>
-          <Navbar />
+          <Routes>
+            <Route path="/" element={<Navbar />} />
+            <Route path="/login" element={<Login />} />
+          </Routes>
         </>
       )}
     </>

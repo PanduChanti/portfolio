@@ -1,4 +1,5 @@
 import React from "react"
+import Chatbot from "./Chatbot"
 
 function About() {
   return (
@@ -35,6 +36,9 @@ function About() {
             src="https://stefantopalovicdev.vercel.app/static/media/about-img.62b47e7f183d4b4e9feb.webp"
             alt="img"
           />
+        </div>
+        <div className=" position-fixed p-2" style={{ bottom: 0, right: 0 }}>
+          <Chatbot />
         </div>
       </div>
     </div>
